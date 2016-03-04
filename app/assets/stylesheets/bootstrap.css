@@ -4404,6 +4404,8 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .container {
   width: auto;
+  background-color: #3b5998;
+  padding-left: 500px;
 }
 
 .nav-collapse.collapse {
@@ -4462,6 +4464,17 @@ input[type="submit"].btn.btn-mini {
   margin-top: 0;
 }
 
+.navbar-inner{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar .brand{
+  color: #fff;
+  font-size: 24px;
+  margin-left: -3px;
+  font-weight: 500;
+}
 .navbar-form {
   margin-bottom: 0;
   *zoom: 1;
@@ -4544,7 +4557,7 @@ input[type="submit"].btn.btn-mini {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1034px;
   margin-bottom: 0;
 }
 
