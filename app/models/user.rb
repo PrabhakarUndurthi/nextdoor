@@ -6,9 +6,9 @@ class User < ActiveRecord::Base
 
     has_many :statuses
 
-    validates :first_name, :last_name, :user_name, presence:true
+    validates :first_name, :last_name, :user_name, presence: true
     
-    validates :user_name, presence:true, uniqueness:true
+    validates :user_name, presence: true, uniqueness: true
     
     validates :user_name, format: {
     with: /\A[a-zA-Z\-\_]+\Z/,
