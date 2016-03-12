@@ -16,4 +16,9 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
   	assert_response :redirect
   	assert_redirected_to '/'
   end
+
+  test "that /ram path goes to the correct profile page" do
+  	get '/ram'
+  	assert_response :success
+  end
 end

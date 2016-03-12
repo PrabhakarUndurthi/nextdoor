@@ -3,3 +3,9 @@ tom:
   last_name: "Jerry"
   user_name: "TomJerry"
   email: "tom@example.com"
+
+ram:
+  first_name: "ram"
+  last_name: "xyz"
+  user_name: "ram"
+  email: "ram@example.com"
