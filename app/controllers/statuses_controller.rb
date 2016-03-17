@@ -25,7 +25,7 @@ class StatusesController < ApplicationController
   # POST /statuses
   # POST /statuses.json
   def create
-    @status = Status.new(status_params)
+    @status = current_user.statuses.new(status_params)
 
     respond_to do |format|
       if @status.save
@@ -42,6 +42,9 @@ class StatusesController < ApplicationController
   # PATCH/PUT /statuses/1.json
   def update
     respond_to do |format|
+      if params[:status_params] &&  params[:status_params].has_key?(:user_id)
+         params[:status_params].delete(:user_id)
+       end
       if @status.update(status_params)
         format.html { redirect_to @status, notice: 'Status was successfully updated.' }
         format.json { render :show, status: :ok, location: @status }
