@@ -9,3 +9,9 @@ ram:
   last_name: "xyz"
   user_name: "ram"
   email: "ram@example.com"
+
+mike: 
+  first_name: "mike"
+  last_name: "thomas"
+  user_name: "mike"
+  email: "mike@example.com"
